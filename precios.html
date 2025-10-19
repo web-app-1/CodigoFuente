@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Precios — Código Fuente</title>
+  <meta name="description" content="Planes y precios de desarrollo web, consultoría y automatizaciones." />
+  <link rel="icon" href="assets/icons/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html#inicio" class="logo">
+        <img src="assets/img/logoN.png" alt="Código Fuente" />
+        <span class="brand-name">Código Fuente</span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#stack">Tecnologías</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary glow" href="index.html#contacto">Hablemos</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero precios -->
+    <section class="hero hero-pricing">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Planes simples, <span class="text-gradient">resultados claros</span></h1>
+          <p class="subtitle">Elige el plan que mejor se adapte a tu etapa — podemos empezar pequeño y escalar.</p>
+
+          <!-- Toggle Mensual / Anual -->
+          <div class="billing-toggle" role="group" aria-label="Tipo de facturación">
+            <button class="billing-btn is-active" data-billing="monthly">Mensual</button>
+            <button class="billing-btn" data-billing="yearly">Anual <span class="badge-save">-15%</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tablas de precios -->
+    <section class="pricing container" aria-labelledby="pricing-title">
+      <h2 id="pricing-title" class="sr-only">Planes</h2>
+
+      <div class="pricing-grid">
+        <!-- Plan Web -->
+        <article class="price-card">
+          <header class="price-head">
+            <span class="pill">Web</span>
+            <h3>Aplicaciones / Sitios</h3>
+            <p class="price">
+              <span class="price-amount" data-monthly="€690" data-yearly="€587">€690</span>
+              <span class="price-period">/ proyecto base</span>
+            </p>
+            <p class="muted small">Ideal para landing, sitio corporativo o MVP ligero.</p>
+          </header>
+          <ul class="price-features">
+            <li>Arquitectura simple y escalable</li>
+            <li>UI responsive y rápida</li>
+            <li>Entrega por etapas (sprints)</li>
+            <li>Integraciones básicas (correo, analytics)</li>
+            <li>Soporte de 2 semanas</li>
+          </ul>
+          <footer class="price-cta">
+            <a class="btn btn-primary glow btn-lg" href="https://wa.me/XXXXXXXXXXX?text=Hola%20Luis,%20quiero%20el%20plan%20Web" target="_blank" rel="noopener">Elegir plan</a>
+          </footer>
+        </article>
+
+        <!-- Plan Consultoría -->
+        <article class="price-card price-card--featured">
+          <header class="price-head">
+            <span class="pill">Consultoría</span>
+            <h3>Estrategia & Roadmap</h3>
+            <p class="price">
+              <span class="price-amount" data-monthly="€390" data-yearly="€332">€390</span>
+              <span class="price-period">/ mensual</span>
+            </p>
+            <p class="muted small">Diagnóstico técnico y de procesos para avanzar con foco.</p>
+          </header>
+          <ul class="price-features">
+            <li>Auditoría de stack y rendimiento</li>
+            <li>Roadmap accionable por sprints</li>
+            <li>1 sesión semanal (60 min)</li>
+            <li>Revisión de entregables</li>
+            <li>Canal directo de soporte</li>
+          </ul>
+          <footer class="price-cta">
+            <a class="btn btn-primary glow btn-lg" href="https://wa.me/XXXXXXXXXXX?text=Hola%20Luis,%20quiero%20el%20plan%20Consultoría" target="_blank" rel="noopener">Elegir plan</a>
+          </footer>
+        </article>
+
+        <!-- Plan Automatizaciones -->
+        <article class="price-card">
+          <header class="price-head">
+            <span class="pill">Automatizaciones</span>
+            <h3>Low-code & Integraciones</h3>
+            <p class="price">
+              <span class="price-amount" data-monthly="€490" data-yearly="€417">€490</span>
+              <span class="price-period">/ paquete</span>
+            </p>
+            <p class="muted small">Flujos ligeros en Zoho / PowerApps / APIs sencillas.</p>
+          </header>
+          <ul class="price-features">
+            <li>Automatizaciones de tareas</li>
+            <li>Integración con herramientas existentes</li>
+            <li>Paneles/reportes básicos</li>
+            <li>Documentación corta</li>
+            <li>Soporte de 2 semanas</li>
+          </ul>
+          <footer class="price-cta">
+            <a class="btn btn-primary glow btn-lg" href="https://wa.me/XXXXXXXXXXX?text=Hola%20Luis,%20quiero%20el%20plan%20Automatizaciones" target="_blank" rel="noopener">Elegir plan</a>
+          </footer>
+        </article>
+      </div>
+
+      <!-- Add-ons -->
+      <div class="addons">
+        <h3 class="addons-title text-gradient">Add-ons</h3>
+        <ul class="addons-list">
+          <li><strong>SEO técnico</strong> — auditoría + ajustes iniciales (desde €180)</li>
+          <li><strong>Hosting / CI-CD</strong> — setup en AWS/Heroku/VPS (desde €220)</li>
+          <li><strong>Soporte ampliado</strong> — bolsa de horas mensual (a medida)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">Preguntas frecuentes</h2>
+        <div class="faq-list">
+          <details>
+            <summary>¿Puedo empezar con algo pequeño y luego crecer?</summary>
+            <p>Sí. Podemos iniciar con un MVP o landing y ampliar por sprints según resultados.</p>
+          </details>
+          <details>
+            <summary>¿Incluye dominio y hosting?</summary>
+            <p>Podemos asesorarte e implementarlo como add-on (AWS/Heroku/VPS o GitHub Pages).</p>
+          </details>
+          <details>
+            <summary>¿Trabajan por contrato o por proyecto cerrado?</summary>
+            <p>Ambas modalidades. Definimos entregables claros y un calendario simple.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>© <span id="year"></span> Código Fuente</div>
+        <nav class="footer-links">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="index.html#servicios">Servicios</a>
+          <a href="#faq">FAQ</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
