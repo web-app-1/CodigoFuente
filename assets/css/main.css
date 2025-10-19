@@ -134,7 +134,7 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 640px) { .services-grid { grid-template-columns: 1fr; } }
 
 /* Tarjetas */
-/* ===== Tarjetas de servicios (con fondo halo restaurado) ===== */
+/* ===== Tarjetas de servicios ===== */
 .service-card {
   position: relative;
   display: flex;
@@ -152,7 +152,7 @@ a { color: inherit; text-decoration: none; }
   transition: transform .18s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease;
 }
 
-/* Halo degradado tipo Datafore */
+/* Halo degradado */
 .service-card::before {
   content: "";
   position: absolute;
@@ -176,6 +176,32 @@ a { color: inherit; text-decoration: none; }
   opacity: 1;
   transform: translateY(-6px);
 }
+
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0;
+}
+.feature-list li {
+  position: relative;
+  padding-left: 26px;
+  margin: 6px 0;
+  color: #C6D0E0;
+}
+.feature-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #22D3EE;
+  font-weight: 700;
+}
+.btn-sm {
+  margin-top: 10px;
+  font-size: .9rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
 
 /* Íconos */
 .service-card svg {
